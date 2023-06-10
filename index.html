@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI工具王</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container border-bottom border-white py-3">
+        <a class="navbar-brand" href="index.html">
+          <h1>
+            <img class="img-fluid logo"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
+              alt="AI工具王">
+          </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">定價</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!--
+          <img src="..." class="d-block w-100" alt="...">-->
+          <div class="carousel-caption">
+            <h5 class="slogan text-white fw-black">透過<br>AI工具王的<br>強大模型<br>讓您的業務更聰明</h5>
+            <button type="button" class="btn btn-outline-light fw-black btn-lg mt-4 p-5 py-3 b-radius-2">開始使用</button>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="img-run my-5">
+        <img data-aos="fade-down" data-aos-duration="900" src="./images/deco.png" alt="箭頭圖">
+        <img data-aos="fade-down" data-aos-duration="600" src="./images/deco.png" alt="箭頭圖">
+        <img data-aos="fade-down" data-aos-duration="300" src="./images/deco.png" alt="箭頭圖">
+      </div>
+    </div>
+
+  </section>
+  <section class="service text-white py-5 fw-black">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="col-12 col-md-4 mb-3 mb-3 title">我們的服務</div>
+        <div class="col-12 col-md-8">
+          <p class="text-justify content-txt ">我們相信透過 AI 技術，<br />包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。</p>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-md-4 mb-3">
+          <div class="card bg-transparent border-secondary p-4 py-5">
+            <i class="material-icons fz-80">flash_on</i>
+            <div class="card-body fw-regular">
+              <h5 class="card-title fs-l fw-black mb-3">快速</h5>
+              <p class="card-text fs-nom text-b20">我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="card bg-transparent border-secondary p-4 py-5">
+            <i class="material-icons fz-80">auto_awesome</i>
+            <div class="card-body fw-regular">
+              <h5 class="card-title fs-l fw-black mb-3">靈活</h5>
+              <p class="card-text fs-nom text-b20">我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="card bg-transparent border-secondary p-4 py-5">
+            <i class="material-icons fz-80">library_add</i>
+            <div class="card-body fw-regular">
+              <h5 class="card-title fs-l fw-black mb-3">擴充</h5>
+              <p class="card-text fs-nom text-b20">我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partner my-5">
+    <div class="container">
+      <div class="title fw-black text-white mb-3">來自合作夥伴</div>
+      <div class="brand py-5">
+        <div class="brand-overlay left"></div>
+        <!-- Slider main container -->
+        <div class="swiper mySwiper mb-3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/enterprise.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise4.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise5.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise6.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise7.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise8.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise9.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise11.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise12.png" alt="">
+            </div>
+          </div>
+          <!--        <div class="swiper-pagination"></div>-->
+        </div>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/enterprise6.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise7.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise8.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise9.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise11.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise12.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/enterprise1.png" alt="">
+            </div>
+          </div>
+          <!--          <div class="swiper-pagination"></div> -->
+        </div>
+        <div class="brand-overlay right"></div>
+      </div>
+      <div class="container mt-5">
+          <!-- Swiper -->
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper mt-5">
+            <div class="swiper-slide">
+              <div class="bg-dark border-radius16 p-4">
+                <div class="stars mb-3">
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                </div>
+                <p class="text-justify text-b20 fs-nom fw-regular mb-5">非常喜歡 AI工具王 提供的 AI 模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王 提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！</p>
+                <div class="d-flex">
+                  <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/avatar3.png" alt="ABC科技有限公司 陳小姐">
+                  <div class="infom text-white ms-3">
+                    <p class="fs-nom">陳小姐</p>
+                    <p class="fs-s">ABC科技有限公司</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-dark border-radius16 p-4">
+                <div class="stars mb-3">
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                </div>
+                <p class="text-justify text-b20 fs-nom fw-regular mb-5">作為一家醫療器材公司，我們非常關注人工智能技術的應用，而 AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王 的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝 AI工具王 團隊的辛勤工作！</p>
+                <div class="d-flex">
+                  <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/avatar1.png" alt="ABC科技有限公司 陳小姐">
+                  <div class="infom text-white ms-3">
+                    <p class="fs-nom">劉小姐</p>
+                    <p class="fs-s">XYZ 醫療器材有限公司</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-dark border-radius16 p-4">
+                <div class="stars mb-3">
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                  <i class="material-icons text-white fs-s">star</i>
+                </div>
+                <p class="text-justify text-b20 fs-nom fw-regular mb-5">我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而 AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用 AI工具王 的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝 AI工具王 團隊的支持！</p>
+                <div class="d-flex">
+                  <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/avatar2.png" alt="ABC科技有限公司 陳小姐">
+                  <div class="infom text-white ms-3">
+                    <p class="fs-nom">黃先生</p>
+                    <p class="fs-s">EFG 銀行</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product px-5 bg-white bg-dark20">
+    <div class="container">
+      <div class="slogan fw-black text-center">這些超酷的應用，都來自 AI工具王</div>
+      <div class="input-container">
+        <span id="search-icon" class="material-icons text-b60">search</span>
+        <input class="form-control text-b60 fs-nom ps-5 py-3 bg-back-20" type="text" placeholder="輸入關鍵字搜尋" oninput="showIcon(event)">
+      </div>
+      <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between mt-4">
+        <div class="order-1 p-2">
+          <button type="button" class="btn btn-outline-secondary b-radius-2 p-3 px-5 border-b20">篩選<span class="material-icons">
+            filter_alt
+            </span></button>
+        </div>
+        <div class="order-3 order-lg-2 p-2 mx-auto fs-nom">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link btn btn-secondary fw-bold active" aria-current="page" href="#">全部</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">聊天</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">影像辨識</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">翻譯</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">行銷</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">客服</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">生產力</a>
+            </li>
+          </ul>
+        </div>
+        <div class="order-2 p-2">
+          <button type="button" class="btn btn-outline-secondary b-radius-2 p-3 px-5 border-b20">由新到舊<span class="material-icons">
+            expand_more
+            </span></button>          
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+        <div class="col">
+          <div class="card b-radius-2 border-b20">
+            <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1655720837928-38b1a93298ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1710&q=80" alt="Your Image">
+            </div>
+            <div class="card-body border-bottom-b20">
+              <h5 class="card-title">Chatbot Builder</h5>
+              <p class="card-text text-b80">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+            </div>
+            <div class="card-body border-bottom-b20">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="fw-bold">AI 模型</a>
+                <a href="#">卡卡</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+              <a href="#" class="card-link">#聊天</a>
+              <a href="#" class="card-link"><span class="material-icons fs-m">
+                share
+                </span></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card b-radius-2 border-b20">
+            <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1655720840699-67e72c0909d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1267&q=80" alt="Your Image">
+            </div>
+            <div class="card-body border-bottom-b20 flex-grow">
+              <h5 class="card-title">Image Recognition Platform</h5>
+              <p class="card-text text-b80">專業的圖像識別平台，識別圖像、分類、標記等。
+              </p>
+            </div>
+            <div class="card-body border-bottom-b20">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="fw-bold">AI 模型</a>
+                <a href="#">杰杰</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+              <a href="#" class="card-link">#影像辨識</a>
+              <a href="#" class="card-link"><span class="material-icons fs-m">
+                share
+                </span></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card b-radius-2 border-b20">
+            <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1655720031554-a929595ffad7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Your Image">
+            </div>
+            <div class="card-body border-bottom-b20">
+              <h5 class="card-title">Language Translation API</h5>
+              <p class="card-text text-b80">專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。</p>
+            </div>
+            <div class="card-body border-bottom-b20">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="fw-bold">AI 模型</a>
+                <a href="#">琪琪</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+              <a href="#" class="card-link">#翻譯</a>
+              <a href="#" class="card-link"><span class="material-icons fs-m">
+                share
+                </span></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card b-radius-2 border-b20">
+            <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="Your Image">
+            </div>
+            <div class="card-body border-bottom-b20">
+              <h5 class="card-title">Sentiment Analysis API</h5>
+              <p class="card-text text-b80">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
+            </div>
+            <div class="card-body border-bottom-b20">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="fw-bold">AI 模型</a>
+                <a href="#">旻旻</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+              <a href="#" class="card-link">#行銷</a>
+              <a href="#" class="card-link"><span class="material-icons fs-m">
+                share
+                </span></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card b-radius-2 border-b20">
+            <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="Your Image">
+            </div>
+            <div class="card-body border-bottom-b20 flex-grow">
+              <h5 class="card-title">Fraud Detection Platform</h5>
+              <p class="card-text text-b80">預防詐騙活動，適用於銀行、金融、電商等。
+              </p>
+            </div>
+            <div class="card-body border-bottom-b20">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="fw-bold">AI 模型</a>
+                <a href="#">卡卡</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+              <a href="#" class="card-link">#客服</a>
+              <a href="#" class="card-link"><span class="material-icons fs-m">
+                share
+                </span></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card b-radius-2 border-b20">
+            <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1655721529468-d0d81b2dc489?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="Your Image">
+            </div>
+            <div class="card-body border-bottom-b20">
+              <h5 class="card-title">Voice Assistant SDK</h5>
+              <p class="card-text text-b80">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
+            </div>
+            <div class="card-body border-bottom-b20">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="fw-bold">AI 模型</a>
+                <a href="#">杰杰</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+              <a href="#" class="card-link">#生產力</a>
+              <a href="#" class="card-link"><span class="material-icons fs-m">
+                share
+                </span></a>
+                </div>
+            </div>
+          </div>
+        </div>                              
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end mt-5">
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>          
+          <li class="page-item">
+            <a class="page-link" href="#"><span class="material-icons">
+              navigate_next
+              </span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <section class="go pb-2">
+    <div class="container">
+      <div class="go-text fw-black text-center text-white">現在就來建立屬於你的服務吧</div>
+      <div class="my-5 text-center">
+        <button type="button" class="btn btn-outline-secondary b-radius-2 p-3 px-5 mx-5 border-b20 fs-m fw-black text-white">開始使用&nbsp;<span class="material-icons">
+          north_east
+          </span></button>
+      </div>
+    </div>
+  </section>
+  <section class="footer px-3">
+    <div class="container border-top border-bottom border-white py-2">
+      <div class="d-md-flex flex-row flex-md-row-reverse justify-content-between py-4 my-5">
+        <div class="mb-5"><img class="img-fluid logo"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
+              alt="AI工具王"></div>
+        <div class="mt-4">
+          <ul class="fw-black">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">定價</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="copyright fw-bold py-4">
+  <div class="container">
+    <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between text-white">
+      <div class="order-1 p-2">
+        <p>AI工具王 © 2023</p>
+      </div>
+      <div class="order-2 order-lg-3 p-2">
+        <a href="#">Back to top <span class="material-icons fs-s">
+          arrow_upward
+          </span></a>
+      </div>
+      <div class="order-3 order-lg-2 p-2 fs-nom mt-4  my-lg-0">
+        <ul class="d-flex">
+          <li class="me-4">Facebook</li>
+          <li class="me-4">Twitter</li>
+          <li class="me-4">Instagram</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <!-- AOS動畫效果 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Swiper 輪播效果 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 8,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 7,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper2 = new Swiper(".mySwiper2", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 7,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper3 = new Swiper(".mySwiper3", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+
+<script>
+  function showIcon(event) {
+    const input = event.target;
+    const icon = document.getElementById("search-icon");
+
+    if (input.value === "") {
+      icon.style.display = "inline-block";
+    } else {
+      icon.style.display = "none";
+    }
+  }
+</script>
+</body>
+
+</html>

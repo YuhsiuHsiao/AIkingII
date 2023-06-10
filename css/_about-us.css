@@ -1,0 +1,23 @@
+
+.fz-80 {
+  font-size: 80px;
+}
+.service .card {
+  border-radius: 16px;
+}
+
+.border-radius16 {
+  border-radius: 16px;
+}
+
+.border-radius160 {
+  border-radius: 160px;
+}
+
+.partner p {
+  line-height: 1.5;
+  font-weight: normal;
+}
+.partner img {
+  object-fit: contain;
+}

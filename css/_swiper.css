@@ -1,0 +1,105 @@
+
+.carousel-item {
+  height: 80vh;
+}
+
+.carousel-caption {
+  top: 1.25rem;
+  text-align: left;
+}
+.slogan {
+  font-size: 120px;
+}
+.img-run {
+  display:flex;
+  justify-content: end;
+ }
+ .img-run img {
+  max-width: 160px;
+}
+ .title {
+  font-size: 32px;
+}
+.content-txt {
+  font-size: 48px;
+}
+@media (max-width: 576px) { 
+  .carousel-item {
+    height: 60vh;
+  }
+  .slogan {
+    font-size: 48px;
+    font-weight: 900;
+  }
+  .img-run img {
+    max-width: 33%;
+  }
+  .img-run {
+   display:flex;
+   justify-content: center;
+  }
+  .service .title {
+    font-size: 20px;
+  }
+  .content-txt {
+    font-size: 32px;
+  }
+ }
+
+.brand {
+  height: 200px;
+}
+.brand {
+  position: relative;
+  /* 其他輪播的樣式設定 */
+}
+
+.brand-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px; /* 根據需要調整壓上漸層的寬度 */
+}
+
+.left {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
+  width: 20%;
+  z-index: 10;
+}
+
+.right {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
+  width: 20%;
+  z-index: 10;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 160px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.mySwiper3 .swiper-slide {
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+}
+
+.mySwiper3 .swiper-slide img {
+  width: auto;
+}

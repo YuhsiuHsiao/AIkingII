@@ -1,0 +1,132 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  line-height: 1.2;
+  font-family: 'Karla', roboto,'PingFang TC','SF Pro Text','Noto Sans TC','Microsoft JhengHei',sans-serif;
+  position: relative;
+}
+
+.material-icons {
+  font-size: 16px;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+.fw-light {
+  font-weight: 300;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.fw-black {
+  font-weight: 900 !important;
+}
+.fw-500 {
+  font-weight: 500;
+}
+
+.fs-s{
+  font-size: .8rem;
+}
+.fs-nom{
+  font-size: 1rem;
+}
+.fs-m{
+  font-size: 1.125rem;
+}
+.fs-l{
+  font-size: 2rem;
+}
+.fs-xl{
+  font-size: 3rem;
+}
+.fs-2l{
+  font-size: 4rem;
+}
+.fs-xxl{
+  font-size: 5rem;
+}
+
+.b-radius-1{
+  border-radius: 8px;
+}
+.b-radius-2{
+  border-radius: 16px;
+}
+
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+
+.ml-6 {
+  margin-left: 4rem;
+}
+.mt-10 {
+  margin-top: 6rem;
+}
+li {
+  list-style: none;
+}
+
+.bg-primary {
+  background-color: #F18724;
+}
+.bg-surface {
+  background-color: #F2EFE7;
+}
+.bg-back-100 {
+  background-color: #020202;
+}
+.bg-back-80 {
+  background-color: #525252;
+}
+.bg-back-60 {
+  background-color: #919191;
+}
+.bg-back-40 {
+  background-color: #D1D1D1;
+}
+.bg-back-20 {
+  background-color: #F2F2F2;
+}
+
+.border-b20 {
+  border-color: #F2F2F2;
+}
+.border-b60 {
+  border-color: #919191;
+}
+
+.text-b20 {
+  color: #F2F2F2;
+}
+.text-b60 {
+  color: #919191;
+}
+.text-b100 {
+  color: #020202;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+body{
+  background-color: black;
+}
+
+.logo{
+  height: 40px;
+}
